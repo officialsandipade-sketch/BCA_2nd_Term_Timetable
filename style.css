@@ -1,0 +1,191 @@
+/* ===============================
+   Google Font
+================================ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ===============================
+   Reset
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ===============================
+   Body
+================================ */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+/* ===============================
+   Header (TOP + CENTER)
+================================ */
+header {
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+header img {
+    width: 110px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #1e3c72;
+    letter-spacing: 1px;
+}
+
+/* ===============================
+   Main Card
+================================ */
+main {
+    width: 100%;
+    max-width: 1100px;
+    margin: 30px auto;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+}
+
+/* ===============================
+   Table
+================================ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* ===============================
+   Table Head
+================================ */
+thead {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+thead th {
+    padding: 15px 10px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+/* ===============================
+   Table Body
+================================ */
+tbody td {
+    padding: 14px 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #eaeaea;
+}
+
+/* Zebra Rows */
+tbody tr:nth-child(even) {
+    background-color: #f6f8fc;
+}
+
+/* Hover Effect */
+tbody tr:hover {
+    background-color: rgba(42, 82, 152, 0.1);
+    transition: 0.3s ease;
+}
+
+/* ===============================
+   Time Column Highlight
+================================ */
+tbody td:first-child {
+    font-weight: 600;
+    color: #1e3c72;
+    background-color: #eef3ff;
+}
+
+/* ===============================
+   Footer
+================================ */
+footer {
+    width: 100%;
+    background: #ffffff;
+    text-align: center;
+    padding: 18px 10px;
+    margin-top: 30px;
+    box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.15);
+}
+
+footer p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1e3c72;
+    letter-spacing: 0.3px;
+}
+
+/* ===============================
+   Responsive
+================================ */
+@media (max-width: 900px) {
+    header h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 700px) {
+    main {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody tr {
+        margin-bottom: 15px;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    tbody td {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 15px;
+        border-bottom: 1px solid #eee;
+    }
+
+    tbody td:first-child {
+        background: #1e3c72;
+        color: #ffffff;
+        font-weight: 600;
+    }
+
+    tbody td:last-child {
+        border-bottom: none;
+    }
+}
